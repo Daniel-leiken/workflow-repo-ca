@@ -1,32 +1,41 @@
-# Workflow repo for the CA
+# Workflow CA
 
-## Setup
+## Project Setup
 
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
-   cd workflow-repo
-   ```
+### Install Dependencies
+To install the necessary dependencies, run:
+```bash
+npm install
+```
 
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
+### Running Tests
+To run the tests, use:
+```bash
+npm run test
+```
 
-3. Start the development server:
-   ```sh
-   npm run dev
-   ```
+### Environment Variables
+The following environment variables are required for the project:
+- `LOGIN_EMAIL`: The email used for login.
+- `LOGIN_PASSWORD`: The password used for login.
+
+Make sure to set these variables in your environment or in a `.env` file at the root of the project.
+
+## Project Structure
+- `index.html`: The home page of the project.
+- `venue/index.html`: The venue details page.
+- `js/`: Contains JavaScript files for various functionalities.
+- `css/`: Contains CSS files for styling.
+- `tests/`: Contains test files for the project.
 
 ## Scripts
+- `npm install`: Installs the project dependencies.
+- `npm run test`: Runs the test suite using Playwright.
 
-- `npm install`: Installs all dependencies.
-- `npm run dev`: Starts the Tailwind CSS watcher to compile styles.
+## Usage
+1. Start the local server.
+2. Navigate to `http://127.0.0.1:5500/` to view the home page.
+3. The venue list will load automatically.
+4. Click on a venue to view its details.
 
-## Environment Variables
-
-The following environment variables are required for the project:
-
-- `API_URL`: The base URL for the API.
-
-Make sure to create a `.env` file in the root of the project and add the required environment variables.
+For any issues or contributions, please open a pull request or issue on the repository.
