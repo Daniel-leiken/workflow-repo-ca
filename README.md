@@ -9,9 +9,17 @@ npm install
 ```
 
 ### Running Tests
-To run the tests, use:
+
+#### Running Vitest Tests
+To run the tests using Vitest, use:
 ```bash
 npm run test
+```
+
+#### Running Playwright Tests
+To run the tests using Playwright, use:
+```bash
+npm run test:playwright
 ```
 
 ### Environment Variables
@@ -30,7 +38,8 @@ Make sure to set these variables in your environment or in a `.env` file at the 
 
 ## Scripts
 - `npm install`: Installs the project dependencies.
-- `npm run test`: Runs the test suite using Playwright.
+- `npm run test`: Runs the test suite using Vitest.
+- `npm run test:playwright`: Runs the test suite using Playwright.
 
 ## Usage
 1. Start the local server.
